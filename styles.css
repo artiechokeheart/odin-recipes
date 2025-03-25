@@ -1,5 +1,11 @@
-* {
-  /* border: solid black 1px; */
+/* * {
+   border: solid black 1px; 
+} */
+body {
+  min-height: 10vh;
+  min-width: fit-content;
+  display: grid;
+  align-items: center;
 }
 
 h1 {
@@ -25,18 +31,17 @@ h1 {
 }
 
 .recipe-header img {
-  height: "300";
+  height: 300;
   width: auto;
 }
 
 .recipes {
   display: flex;
-  flex: 1;
   list-style: none;
-  padding: 1%;
-  justify-content: space-around;
-  gap: 5%;
-  padding: 2%;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 .recipes li {
@@ -46,7 +51,8 @@ h1 {
 }
 
 .thumbnail {
-  height: 175px;
-  width: 200px;
-  margin-bottom: 2%;
+  height: 10em;
+  width: auto;
+  margin: 0.2rem;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem hsl(0 50% 80%);
 }
